@@ -1,66 +1,183 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset and Font */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
-/* Header */
-.hero-section {
-    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+.animated-bg {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: radial-gradient(circle, rgba(87, 75, 108, 0.8), rgba(20, 20, 20, 0.9));
+    overflow: hidden;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.animated-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.31), rgba(255, 255, 255, 0) 70%);
+    animation: pulse 6s infinite;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+        transform: rotate(45deg) scale(1.5);
+    }
+}
+
+/* Section Styling */
+.div1, .div3 {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.746);
+    margin: 20px 0;
+    font-family: Arial;
+}
+.projects {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(107, 101, 117, 0.746);
+    margin: 20px 0;
+    font-family: Arial;
+}
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: rgba(30, 30, 30, 0.9);
     color: white;
     text-align: center;
-    padding: 50px 0;
 }
-nav {
+
+#projects h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* Accordion Styling */
+.projects-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-item {
+    background-color: #4a3f78;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
     align-items: center;
-}
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-.nav-links li a {
+    padding: 15px 20px;
+    font-size: 1.2em;
     color: white;
-    text-decoration: none;
-}
-.hero-content {
-    margin-top: 20px;
-}
-.hero-content .btn {
-    background: white;
-    color: #4e54c8;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    background-color: #6a5fb8;
 }
 
-/* Sections */
-section {
-    padding: 50px 20px;
-    text-align: center;
+.project-header:hover {
+    background-color: #7b6bd1;
 }
-.project-list {
+
+.toggle-button {
+    font-size: 1.5em;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    font-size: 1em;
+    color: #ccc;
+    background-color: #5a4d9f;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.project-item.open .project-details {
+    max-height: 200px; /* Adjust based on content */
+    padding: 15px 20px;
+}
+
+.project-item.open .toggle-button {
+    transform: rotate(45deg);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+footer {
+    background-color: rgba(20, 20, 20, 0.9);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer .social-links {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.project-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+
+footer .social-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
+footer .social-links a:hover {
+    color: #8f94fb;
 }
