@@ -3,53 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myprofile</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Guru Vardhan - Portfolio</title>
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="hero-section">
-        <nav>
-            <div class="logo">Guru Vardhan</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Full-Stack Developer | Innovator | Problem Solver</p>
-            <a href="#projects" class="btn">Explore My Work</a>
+
+    <!-- Animated Background with Text -->
+    <div class="animated-bg">
+        <canvas id="particleCanvas"></canvas>
+        <div class="text-container">
+            <h1>Guru Vardhan</h1>
+            <p></p>
         </div>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p></p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>description of the project.</p>
+    </div>
+
+    <!-- About Section -->
+     <div class="div1">
+        <h2>A Bit About Me..</h2>
+        <pre>My name is Guru VardhanI graduated with a Bachelor of Technology in Information Technology from vignan University with a GPA 8.36.
+             During my academic carrier, I worked on few projects that helped me improve my programming skills and done few projects.
+             I work efficiently both as an individual contributor as well as along with a team.</pre>
+        <p>I'm a passionate Full-Stack Developer with expertise in various modern web technologies. I specialize in building scalable and secure applications.</p>
+    </div>
+<!-- Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <p>Here are some of the projects I have worked on</p>
+    <div class="projects-accordion">
+        <div class="project-item">
+            <div class="project-header">
+                <h3>Secure Image Retrieval Scheme</h3>
+                <span class="toggle-button">+</span>
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>description of the project.</p>
+            <div class="project-details">
+                <p>
+                    Developed a secure image protection framework that utilizes AES, RSA, and SHA-256 algorithms 
+                    to enhance the privacy and integrity of images. The system ensures data confidentiality and authenticity, 
+                    effectively preventing unauthorized access and tampering.
+                    </p>
+                    <p>
+                    Tech Stack - Python, Crypto Module, Hashlib
+                    </p>
             </div>
         </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+        <div class="project-item">
+            <div class="project-header">
+                <h3>Stock Trend Prediction Website</h3>
+                <span class="toggle-button">+</span>
+            </div>
+            <div class="project-details">
+                <p>
+                    Created a Machine learning project using LSTM model, which is going to show the actual trend graph of the stock and the predicted trend graph of stock.
+                    
+                    <p>Tech Stack - Python, Streamlit</p>
+                </p>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-header">
+                <h3>E-Book Management System</h3>
+                <span class="toggle-button">+</span>
+            </div>
+            <div class="project-details">
+                <p>
+                    Proposed an application, which provides an easy and efficient way to manage books online.
+                    
+                    <p>Tech stack - PHP, HTML, CSS, MySQL</p>
+                </p>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-header">
+                <h3>Todo List</h3>
+                <span class="toggle-button">+</span>
+            </div>
+            <div class="project-details">
+                <p>
+                    Created a simple static Todo list website.
+                    <p>Tech stack - JS, HTML, CSS</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+     <div class="div3">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to send me a message!</p>
+        <form class="form">
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
         </form>
-    </section>
-    <footer>
-        <p></p>
+     </div>
+    <footer class="div4">
+        <div class="social-links">
+            <a href="https://linkedin.com/in/guru-vardhan-b41a9324a" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/gvk00" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </footer>
+
+    <script src="sc.js"></script>
+    </div>
+    <script src="sc.js"></script>
 </body>
 </html>
+
