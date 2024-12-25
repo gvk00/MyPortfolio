@@ -1,0 +1,66 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* Header */
+.hero-section {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+.hero-content {
+    margin-top: 20px;
+}
+.hero-content .btn {
+    background: white;
+    color: #4e54c8;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
