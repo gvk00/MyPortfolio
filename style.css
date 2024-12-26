@@ -142,6 +142,9 @@ p {
     margin: 10px 0;
 }
 
+body h1 {
+    font-size: 80px;
+}
 form {
     display: flex;
     flex-direction: column;
