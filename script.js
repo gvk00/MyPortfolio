@@ -1,4 +1,3 @@
-// Particle Effect using Canvas
 const canvas = document.getElementById('particleCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -61,10 +60,8 @@ document.querySelectorAll('.project-header').forEach(header => {
     header.addEventListener('click', () => {
         const projectItem = header.parentElement;
 
-        // Toggle the 'open' class on the clicked item
         projectItem.classList.toggle('open');
 
-        // Close other open items (if you want to allow only one open at a time)
         document.querySelectorAll('.project-item').forEach(item => {
             if (item !== projectItem) {
                 item.classList.remove('open');
