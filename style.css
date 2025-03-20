@@ -1,4 +1,35 @@
-/* General Reset and Font */
+
+@media only screen and (max-width: 768px) {
+    body, html {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .animated-bg {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .text-container h1 {
+        font-size: 40px; /* Smaller heading size */
+    }
+    .text-container p {
+        font-size: 16px;
+    }
+    .projects-accordion {
+        width: 100%; /* Make accordion take full width */
+    }
+    .project-header {
+        font-size: 1em;
+    }
+    input, textarea {
+        width: 90%; /* Adjust form width for mobile */
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    footer .social-links a {
+        font-size: 20px; /* Adjust icon size */
+    }
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -140,6 +171,10 @@ h2 {
 
 p {
     margin: 10px 0;
+}
+.about_format{
+    font-family: 'Bell MT', serif; 
+    line-height: 1.2;
 }
 
 body h1 {
