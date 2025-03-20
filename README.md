@@ -9,4 +9,4 @@ The portfolio website is a personal project designed to showcase my skills, proj
 A clean and modern color palette was selected, featuring neutral tones like white and gray, complemented by an accent color for highlights.
 
 * Layout:
-The website employs a responsive grid-based layout to ensure compatibility across devices. Sections such as "About Me," "Projects," "Skills," and "Contact" are organized logically, providing an intuitive navigation experience.
+The website employs a responsive grid-based layout to ensure compatibility across devices. Sections such as "About Me," "Projects," "Skills (view in resume)," and "Contact" are organized logically, providing an intuitive navigation experience.
