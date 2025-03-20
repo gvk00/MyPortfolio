@@ -1,32 +1,31 @@
-
 @media only screen and (max-width: 768px) {
     body, html {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px; 
     }
     .animated-bg {
         flex-direction: column;
         padding: 20px;
     }
     .text-container h1 {
-        font-size: 40px; /* Smaller heading size */
+        font-size: 40px; 
     }
     .text-container p {
         font-size: 16px;
     }
     .projects-accordion {
-        width: 100%; /* Make accordion take full width */
+        width: 100%; 
     }
     .project-header {
         font-size: 1em;
     }
     input, textarea {
-        width: 90%; /* Adjust form width for mobile */
+        width: 90%; 
     }
     h2 {
         font-size: 1.5em;
     }
     footer .social-links a {
-        font-size: 20px; /* Adjust icon size */
+        font-size: 20px; 
     }
 }
 
@@ -79,7 +78,6 @@ body, html {
     }
 }
 
-/* Section Styling */
 .div1, .div3 {
     padding: 50px;
     text-align: center;
@@ -94,7 +92,7 @@ body, html {
     margin: 20px 0;
     font-family: Arial;
 }
-/* Projects Section */
+
 #projects {
     padding: 50px;
     background-color: rgba(30, 30, 30, 0.9);
@@ -106,8 +104,6 @@ body, html {
     margin-bottom: 30px;
     font-size: 2.5em;
 }
-
-/* Accordion Styling */
 .projects-accordion {
     max-width: 800px;
     margin: 0 auto;
@@ -156,7 +152,7 @@ body, html {
 }
 
 .project-item.open .project-details {
-    max-height: 200px; /* Adjust based on content */
+    max-height: 200px; 
     padding: 15px 20px;
 }
 
